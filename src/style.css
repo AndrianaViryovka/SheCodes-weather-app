@@ -1,0 +1,127 @@
+h1 {
+  padding: 20px 0px 0px 20px;
+  margin: 0;
+  font-family: "Oxygen", sans-serif;
+  font-size: 56px !important;
+  text-align: left;
+  color: #c9cfd3;
+}
+.cityTemperature {
+  padding: 0px 10px 0px 20px;
+  font-size: 90px !important;
+  font-style: normal;
+  margin: 0;
+  font-family: "Oxygen", sans-serif;
+  color: #c9cfd3;
+  text-align: right;
+}
+.dateMonth {
+  padding: 0px 0px 0px 20px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 48px;
+  font-weight: 400;
+  text-align: left;
+  color: #c9cfd3;
+}
+.fa-cloud-sun {
+  text-align: left;
+  color: #c9cfd3;
+}
+.temperature {
+  padding: 0px 0px 0px 20px;
+  font-size: 26px;
+  line-height: 48px;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+  color: #c9cfd3;
+}
+.input-group {
+  padding: 0px 0px 0px 20px;
+  margin: 0;
+  text-align: left;
+  color: #c9cfd3;
+}
+.dividerClass {
+  text-align: center;
+  color: whitesmoke;
+  border-width: 2px;
+  margin: 0px;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 80px;
+}
+.row {
+  text-align: center;
+  align-content: right;
+  padding: 0px 0px 0px 20px;
+  margin: 0;
+  width: 100%;
+}
+.rounded {
+  max-width: 300px;
+  margin: 0;
+  padding: 20px;
+}
+.fa-sun,
+.fa-cloud-sun-rain,
+.fa-cloud,
+.fa-cloud-showers-heavy {
+  font-size: 30px;
+  color: #354a60;
+}
+.fa-cloud-sun {
+  color: #c9cfd3;
+}
+
+.card-text {
+  font-size: 28px;
+}
+.weatherApp {
+  max-width: 850px;
+  border: 1px solid;
+  padding: 0px 0px 20px 0px;
+  margin: 20px;
+  border-radius: 15px;
+  border-color: #c9cfd3;
+  border-width: 2px;
+  background: rgb(141, 185, 230);
+  background: linear-gradient(
+    0deg,
+    rgba(141, 185, 230, 1) 0%,
+    rgba(75, 98, 122, 1) 42%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+.text-left {
+  width: 80%;
+}
+.inputGroup {
+  text-align: left;
+  padding: 20px 0px 20px 20px;
+  margin: 0;
+}
+.units {
+  position: relative;
+  top: -50px;
+  color: #c9cfd3;
+  text-decoration: none;
+}
+.linkColor {
+  color: #c9cfd3;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 20px;
+  text-align: right;
+}
+ul {
+  margin: 100px;
+  padding: 20px;
+  list-style: none;
+  text-align: left;
+  color: #c9cfd3;
+}
+.card-body {
+  background-color: #dde4e9;
+}

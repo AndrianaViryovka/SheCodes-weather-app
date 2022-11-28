@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <script
+      src="https://kit.fontawesome.com/c6f52809ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="weatherApp">
+      <div class="container text-left">
+        <div class="row">
+          <div class="col">
+            <h1 id="city">Kyiv</h1>
+            <p class="dateMonth" id="datetime"></p>
+            <div class="temperature">
+              <span id="description"
+                ><i class="fa-solid fa-cloud-sun"></i> Mostly cloudy</span
+              >
+            </div>
+
+            <form class="inputGroup" id="search-form">
+              <input
+                type="text"
+                id="city-search"
+                placeholder="Search city"
+                autofocus="on"
+              />
+              <input type="submit" value="Search" />
+              <input type="button" value="📍" id="cityButton" />
+            </form>
+          </div>
+          <div class="col">
+            <p>
+              <strong class="cityTemperature" id="city-temp">-1</strong>
+              <span class="units">
+                <a class="linkColor" href="#" id="celsius-link">°C</a>
+                |
+                <a class="linkColor" href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </p>
+            <ul>
+              <li>Humidity: <span id="humidity">10</span>%</li>
+              <li>Wind: <span id="wind">5</span>mph</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr class="dividerClass" />
+      <div class="row">
+        <div class="row justify-content-center">
+          <div class="col-sm-2">
+            <div class="shadow-lg p-1 mb-8 bg-body rounded">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Oct 22</h5>
+                  <i class="fa-solid fa-sun"></i>
+                  <p class="card-text">12°C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="shadow-lg p-1 mb-8 bg-body rounded">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Oct 23</h5>
+                  <i class="fa-solid fa-cloud-sun-rain"></i>
+                  <p class="card-text">8°C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="shadow-lg p-1 mb-8 bg-body rounded">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Oct 24</h5>
+                  <i class="fa-solid fa-cloud"></i>
+                  <br />
+                  <p class="card-text">13°C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="shadow-lg p-1 mb-8 bg-body rounded">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Oct 25</h5>
+                  <i class="fa-solid fa-sun"></i>
+                  <p class="card-text">10°C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="shadow-lg p-1 mb-8 bg-body rounded">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Oct 26</h5>
+                  <i class="fa-solid fa-cloud-showers-heavy"></i>
+                  <p class="card-text">9°C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
