@@ -82,7 +82,7 @@ h1 {
   max-width: 850px;
   border: 1px solid;
   padding: 0px 0px 20px 0px;
-  margin: 20px;
+  margin: 20px 0px 0px 20px;
   border-radius: 15px;
   border-color: #c9cfd3;
   border-width: 2px;
@@ -124,4 +124,10 @@ ul {
 }
 .card-body {
   background-color: #dde4e9;
+}
+.GitNetlifyLink {
+  padding: 0px 0px 0px 20px;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
 }
