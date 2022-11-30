@@ -10,9 +10,24 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
+  let months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  let month = months[currentTime.getMonth()];
   let currentDay = days[currentTime.getDay()];
   let mins = ("0" + currentTime.getMinutes()).slice(-2);
-  let time = `${currentDay} ${currentTime.getHours()}:${mins}`;
+  let time = `${month} ${currentTime.getDate()}, ${currentDay} ${currentTime.getHours()}:${mins}`;
 
   document.getElementById("datetime").textContent = time;
   return time;
