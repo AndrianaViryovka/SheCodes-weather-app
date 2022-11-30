@@ -33,9 +33,7 @@
             <h1 id="city">Kyiv</h1>
             <p class="dateMonth" id="datetime"></p>
             <div class="temperature">
-              <span id="description"
-                ><i class="fa-solid fa-cloud-sun"></i> Mostly cloudy</span
-              >
+              <span id="description"> Mostly cloudy</span>
             </div>
 
             <form class="inputGroup" id="search-form">
@@ -49,8 +47,14 @@
               <input type="button" value="📍" id="cityButton" />
             </form>
           </div>
+
           <div class="col">
             <p>
+              <img
+                alt="icon"
+                id="icon"
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
+              />
               <strong class="cityTemperature" id="city-temp">-1</strong>
               <span class="units">
                 <a class="linkColor" href="#" id="celsius-link">°C</a>
@@ -59,8 +63,8 @@
               </span>
             </p>
             <ul>
-              <li>Humidity: <span id="humidity">10</span>%</li>
-              <li>Wind: <span id="wind">5</span>mph</li>
+              <li>💧Humidity: <span id="humidity">10</span>%</li>
+              <li>💨Wind: <span id="wind">5</span>km/h</li>
             </ul>
           </div>
         </div>
