@@ -25,7 +25,7 @@
     />
   </head>
 
-  <body style="background-image: url(images/sky2.jpg)">
+  <body style="background-image: url(images/sky.jpg)">
     <div class="weatherApp">
       <div class="container text-left">
         <div class="row">
@@ -33,9 +33,8 @@
             <h1 id="city">Kyiv</h1>
             <p class="dateMonth" id="datetime"></p>
             <div class="temperature">
-              <span id="description"> Mostly cloudy</span>
+              <span id="description"></span>
             </div>
-
             <form class="inputGroup" id="search-form">
               <input
                 type="text"
@@ -65,157 +64,15 @@
               </span>
             </p>
             <ul>
-              <li>Humidity: <span id="humidity">10</span>%</li>
-              <li>Wind: <span id="wind">5</span>km/h</li>
+              <li>Feels like: <span id="feels_like"></span>°C</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
             </ul>
           </div>
         </div>
       </div>
       <hr class="dividerClass" />
-      <div class="row">
-        <div class="row justify-content-center">
-          <div class="col-sm-2">
-            <div class="shadow-lg p-1 mb-8 bg-body rounded">
-              <div class="card">
-                <div class="card-body">
-                  <div class="weather-forecast-date">Thu</div>
-                  <img
-                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
-                    alt="forecast-icon"
-                    id="weather-icon"
-                  />
-                  <div class="weather-forecast-temperatures">
-                    <span
-                      class="weather-forecast-temperature-max"
-                      id="text-card"
-                    >
-                      <strong> 18° </strong>|
-                    </span>
-                    <span
-                      class="weather-forecast-temperature-min"
-                      id="text-card"
-                    >
-                      12°
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="shadow-lg p-1 mb-8 bg-body rounded">
-              <div class="card">
-                <div class="card-body">
-                  <div class="weather-forecast-date">Fri</div>
-                  <img
-                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
-                    alt="forecast-icon"
-                    id="weather-icon"
-                  />
-                  <div class="weather-forecast-temperatures">
-                    <span
-                      class="weather-forecast-temperature-max"
-                      id="text-card"
-                    >
-                      <strong> 18° </strong>|
-                    </span>
-                    <span
-                      class="weather-forecast-temperature-min"
-                      id="text-card"
-                    >
-                      12°
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="shadow-lg p-1 mb-8 bg-body rounded">
-              <div class="card">
-                <div class="card-body">
-                  <div class="weather-forecast-date">Sat</div>
-                  <img
-                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
-                    alt="forecast-icon"
-                    id="weather-icon"
-                  />
-                  <div class="weather-forecast-temperatures">
-                    <span
-                      class="weather-forecast-temperature-max"
-                      id="text-card"
-                    >
-                      <strong> 18° </strong>|
-                    </span>
-                    <span
-                      class="weather-forecast-temperature-min"
-                      id="text-card"
-                    >
-                      12°
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="shadow-lg p-1 mb-8 bg-body rounded">
-              <div class="card">
-                <div class="card-body">
-                  <div class="weather-forecast-date">Sun</div>
-                  <img
-                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
-                    alt="forecast-icon"
-                    id="weather-icon"
-                  />
-                  <div class="weather-forecast-temperatures">
-                    <span
-                      class="weather-forecast-temperature-max"
-                      id="text-card"
-                    >
-                      <strong> 18° </strong>|
-                    </span>
-                    <span
-                      class="weather-forecast-temperature-min"
-                      id="text-card"
-                    >
-                      12°
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="shadow-lg p-1 mb-8 bg-body rounded">
-              <div class="card">
-                <div class="card-body">
-                  <div class="weather-forecast-date">Mon</div>
-                  <img
-                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
-                    alt="forecast-icon"
-                    id="weather-icon"
-                  />
-                  <div class="weather-forecast-temperatures">
-                    <span
-                      class="weather-forecast-temperature-max"
-                      id="text-card"
-                    >
-                      <strong> 18° </strong>|
-                    </span>
-                    <span
-                      class="weather-forecast-temperature-min"
-                      id="text-card"
-                    >
-                      12°
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="weather-forecast" id="forecast"></div>
     </div>
     <small class="GitNetlifyLink">
       <a
@@ -231,7 +88,7 @@
         target="_blank"
         >hosted on Netlify</a
       >
-      , by Andriana Slobozheniuk"
+      , by Andriana Slobozheniuk
     </small>
     <script src="src/index.js"></script>
   </body>

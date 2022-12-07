@@ -24,10 +24,6 @@ h1 {
   text-align: left;
   color: #c9cfd3;
 }
-.fa-cloud-sun {
-  text-align: left;
-  color: #c9cfd3;
-}
 .temperature {
   padding: 0px 0px 0px 20px;
   font-size: 26px;
@@ -37,12 +33,6 @@ h1 {
   text-align: left;
   color: #c9cfd3;
   text-transform: capitalize;
-}
-.input-group {
-  padding: 0px 0px 0px 20px;
-  margin: 0;
-  text-align: left;
-  color: #c9cfd3;
 }
 .dividerClass {
   text-align: center;
@@ -60,22 +50,6 @@ h1 {
   margin: 0;
   width: 100%;
 }
-.rounded {
-  max-width: 300px;
-  margin: 0;
-  padding: 20px;
-}
-.fa-sun,
-.fa-cloud-sun-rain,
-.fa-cloud,
-.fa-cloud-showers-heavy {
-  font-size: 30px;
-  color: #354a60;
-}
-.fa-cloud-sun {
-  color: #c9cfd3;
-}
-
 #card-text {
   font-size: 22px;
 }
@@ -155,11 +129,11 @@ a {
 }
 #git-link {
   text-decoration: none;
-  color: #ef988a;
+  color: #c9cfd3;
 }
 #netlify-link {
   text-decoration: none;
-  color: #ef988a;
+  color: #c9cfd3;
 }
 #weather-icon {
   margin-left: -5px;
@@ -167,5 +141,5 @@ a {
   max-width: 100px;
 }
 .weather-forecast-date {
-  font-size: 24px;
+  font-size: 26px;
 }
